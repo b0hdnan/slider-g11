@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,60 +8,77 @@
 	<title>Слайдер</title>
 	<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-<div class="slider">
-	<div class="slider-track">
-		<div class="slide">
-			<img src="./pexels-max-andrey-1366630.jpg" alt="">
+	<video autoplay muted loop id="myVideo">
+		<source src="./video/pexels-peter-fowler-6394054-4096x2048-24fps.mp4" type="video/mp4">
+		Your browser does not support HTML5 video.
+	</video>
+	<div class="slider">
+		<div class="slider-track">
+			<div class="slide">
+				<img src="./slider/pexels-aliakbar-nosrati-15544309.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="./slider/pexels-christyn-reyes-16143540.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="./slider/pexels-daniel-duarte-16149950.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="./slider/pexels-thamyres-silva-16122283.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="./slider/pexels-enrico-maioni-16129106.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="./slider/pexels-ana-karenina-16118941.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="./slider/pexels-ashford-marx-16121299.jpg" alt="">
+			</div>
+			<div class="slide">
+				<img src="./slider/pexels-luiz-felipe-16105181.jpg" alt="">
+			</div>
+			<img src="./slider/pexels-aliakbar-nosrati-15544309.jpg" alt="">
 		</div>
 		<div class="slide">
-			<img src="./pexels-stephan-seeber-1261731.jpg" alt="">
+			<img src="./slider/pexels-christyn-reyes-16143540.jpg" alt="">
 		</div>
 		<div class="slide">
-			<img src="./pexels-max-andrey-1366630.jpg" alt="">
+			<img src="./slider/pexels-daniel-duarte-16149950.jpg" alt="">
 		</div>
 		<div class="slide">
-			<img src="../pexels-stephan-seeber-1261731.jpg" alt="">
+			<img src="./slider/pexels-thamyres-silva-16122283.jpg" alt="">
 		</div>
 		<div class="slide">
-			<img src="./pexels-max-andrey-1366630.jpg" alt="">
+			<img src="./slider/pexels-enrico-maioni-16129106.jpg" alt="">
 		</div>
 		<div class="slide">
-			<img src="./pexels-stephan-seeber-1261731.jpg" alt="">
+			<img src="./slider/pexels-ana-karenina-16118941.jpg" alt="">
 		</div>
 		<div class="slide">
-			<img src="./pexels-max-andrey-1366630.jpg" alt="">
+			<img src="./slider/pexels-ashford-marx-16121299.jpg" alt="">
 		</div>
 		<div class="slide">
-			<img src="./pexels-stephan-seeber-1261731.jpg" alt="">
-		</div>
-		<div class="slide">
-			<img src="./pexels-max-andrey-1366630.jpg" alt="">
-		</div>
-		<div class="slide">
-			<img src="./pexels-stephan-seeber-1261731.jpg" alt="">
-		</div>
-		<div class="slide">
-			<img src="./pexels-max-andrey-1366630.jpg" alt="">
-		</div>
-		<div class="slide">
-			<img src="../pexels-stephan-seeber-1261731.jpg" alt="">
-		</div>
-		<div class="slide">
-			<img src="./pexels-max-andrey-1366630.jpg" alt="">
-		</div>
-		<div class="slide">
-			<img src="./pexels-stephan-seeber-1261731.jpg" alt="">
-		</div>
-		<div class="slide">
-			<img src="./pexels-max-andrey-1366630.jpg" alt="">
-		</div>
-		<div class="slide">
-			<img src="./pexels-stephan-seeber-1261731.jpg" alt="">
+			<img src="./slider/pexels-luiz-felipe-16105181.jpg" alt="">
 		</div>
 	</div>
-</div>
-	<script src="script.js"></script>
-</body>
-</html>
+	</div>
+	<script>
+		var video = document.getElementById("myVideo");
+		var btn = document.getElementById("myBtn");
 
+		function myFunction() {
+			if (video.paused) {
+				video.play();
+				btn.innerHTML = "Pause";
+			} else {
+				video.pause();
+				btn.innerHTML = "Play";
+			}
+		}
+	</script>
+</body>
+
+</html>
